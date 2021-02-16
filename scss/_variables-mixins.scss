@@ -1,0 +1,23 @@
+// Project var 
+
+$headings-color: hsl(192, 100%, 9%);
+$btn-bg-color: hsl(322, 100%, 66%);
+$hover-btn-bg-colr: hsl(321, 100%, 78%);
+$input-invalid-color: hsl(0, 100%, 63%);
+
+$section-bg-color: hsl(207, 100%, 98%);
+$footer-bg-color: hsl(192, 100%, 9%); 
+
+$fnt-famliy-headings: 'Poppins', sans-serif;
+$fnt-family-content: 'Open Sans', sans-serif;
+
+
+// Project Mixins 
+
+@mixin btn-general-styles ($width, $padding, $bg-color){
+    width: $width;
+    padding: $padding;
+    background-color: $bg-color;
+    border-radius: 50px;
+}
+

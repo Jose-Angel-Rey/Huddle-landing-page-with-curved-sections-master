@@ -1,0 +1,16 @@
+// Coded by: Jose Angel Rey
+// Github: https://github.com/Jose-Angel-Rey
+// Gmail: dev.joseangel.rey@gmail.com
+
+//  Project var - Mixins
+@import "variables-mixins";
+
+
+// Page styles (Mobile first)
+@import "main-header-styles";
+@import "main-content-styles";
+@import "cta-styles";
+@import "main-footer-styles";
+
+// Media Queries 
+@import "media-queries";

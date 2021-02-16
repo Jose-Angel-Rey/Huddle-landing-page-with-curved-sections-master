@@ -1,0 +1,98 @@
+/* Base styles*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+
+/* Main-Header styles */
+.main-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 35px;
+  margin-bottom: 100px;
+
+  .top-section {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    .top-section__logo {
+      width: 45%;
+      height: auto;
+      max-width: 160px;
+    }
+    .top-section__btn {
+      @include btn-general-styles(40%, 8px, transparent);
+      max-width: 130px;
+      cursor: pointer;
+      border: 2px solid $btn-bg-color;
+      outline: none;
+      color: $btn-bg-color;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $hover-btn-bg-colr;
+        border-color: $hover-btn-bg-colr;
+        transform: scale(1.01);
+      }
+      &:active {
+        color: #ffffff;
+        background-color: #800080;
+      }
+    }
+  }
+  .header-content {
+    @extend .top-section;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: $headings-color;
+
+    .header-content__title {
+      font-size: 2.6rem;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      line-height: 40px;
+      font-family: $fnt-famliy-headings;
+    }
+    .header-content__info {
+      @extend .header-content__title;
+      max-width: 400px;
+      font-size: 1.6rem;
+      line-height: 23px;
+      margin: 30px auto;
+      font-family: $fnt-family-content;
+    }
+    .header-content__btn {
+      @include btn-general-styles(70%, 20px, $btn-bg-color);
+      max-width: 300px;
+      color: #ffffff;
+      margin: 10px auto 50px;
+      outline: none;
+      border: none;
+      font-family: $fnt-family-content;
+      font-weight: 700;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: $hover-btn-bg-colr;
+        transform: scale(1.01);
+      }
+      &:active {
+        background-color: #800080;
+      }
+    }
+    .header-content__illustration {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}
