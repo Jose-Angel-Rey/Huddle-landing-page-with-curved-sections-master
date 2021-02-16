@@ -10,6 +10,6 @@ Thanks for checking out this front-end coding challenge.
 
 🚀 My Challengue solution:
 
-💡 My challengue solution 👉🏼   👈🏼
+💡 My challengue solution 👉🏼 https://huddle-landing-page-with-curved-sections-master.jose-angel-rey.vercel.app/  👈🏼
 
 👨🏼‍💻 Contact: dev.joseangel.rey@gmail.com
